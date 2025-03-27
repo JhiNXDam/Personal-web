@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZU - 官方网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #ffffff;
+            color: #333;
+            padding: 1rem 0;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .school-title h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        .school-title p {
+            font-size: 16px;
+        }
+        nav {
+            background-color: #ffffff;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li a {
+            color: #333;
+            padding: 1rem;
+            display: block;
+            text-decoration: none;
+        }
+        .nav-links li a:hover {
+            background-color: #f0f0f0;
+        }
+        .banner {
+            height: 400px;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pictures/GZU-gate.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .banner-content h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .banner-content p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .content-section {
+            padding: 2rem 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .news-grid, .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .news-item, .event-item {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .news-date, .event-date {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background-color: #002244;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .footer-column h3 {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #003366;
+            padding-bottom: 0.5rem;
+        }
+        .footer-column ul {
+            list-style: none;
+        }
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container logo-container">
+            <div class="logo">
+                <img src="pictures/GZU-flag.jpg" alt="GZU Logo">
+            </div>
+            <div class="school-title">
+                <h1>GZU - 贵州大学</h1>
+                <p>知识、创新、卓越</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="blog.html">首页</a></li>
+                <li><a href="#">关于GZU</a></li>
+                <li><a href="#">院系设置</a></li>
+                <li><a href="#">招生信息</a></li>
+                <li><a href="#">科研教学</a></li>
+                <li><a href="#">校园生活</a></li>
+                <li><a href="#">新闻中心</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="banner">
+        <div class="banner-content">
+            <h2>欢迎来到GZU</h2>
+            <p>传承历史，拥抱未来，培养明日领袖</p>
+        </div>
+    </div>
+    
+    <section class="content-section container">
+        <div class="section-title">
+            <h2>学校新闻</h2>
+        </div>
+        <div class="news-grid">
+            <div class="news-item">
+                <div class="news-date">2023年10月15日</div>
+                <h3>GZU举办2023年秋季学术交流会</h3>
+                <p>上周，GZU成功举办了2023年秋季学术交流会，来自全国各地的专家学者齐聚一堂，共同探讨学术前沿问题...</p>
+            </div>
+            <div class="news-item">
+                <div class="news-date">2023年10月10日</div>
+                <h3>GZU学生在全国比赛中获得一等奖</h3>
+                <p>我校学生代表队在全国大学生创新大赛中脱颖而出，斩获多项大奖，展现了GZU学子的风采...</p>
+            </div>
+            <div class="news-item">
+                <div class="news-date">2023年10月5日</div>
+                <h3>GZU与国际知名大学签署合作协议</h3>
+                <p>近日，GZU与多所国际知名大学签署了战略合作协议，进一步推动我校的国际化进程...</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section container">
+        <div class="section-title">
+            <h2>近期活动</h2>
+        </div>
+        <div class="events-grid">
+            <div class="event-item">
+                <div class="event-date">2023年10月20日</div>
+                <h3>GZU校园开放日</h3>
+                <p>诚邀社会各界人士参观我校校园，了解GZU的历史与文化，体验校园生活...</p>
+            </div>
+            <div class="event-item">
+                <div class="event-date">2023年10月25日</div>
+                <h3>GZU学术讲座：人工智能的未来</h3>
+                <p>著名人工智能专家将在我校开展学术讲座，探讨AI技术的最新发展与未来趋势...</p>
+            </div>
+            <div class="event-item">
+                <div class="event-date">2023年11月1日</div>
+                <h3>GZU校园文化节</h3>
+                <p>一年一度的校园文化节即将开幕，精彩纷呈的节目等待您的参与...</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section container">
+        <div class="section-title">
+            <h2>关于GZU</h2>
+        </div>
+        <p>GZU创建于1902年，是一所以工为主、多学科协调发展的综合性大学。经过多年的建设与发展，GZU已成为在国内外具有一定影响力的高等教育机构。</p>
+        <p>GZU秉承"厚德、博学、求是、创新"的校训，致力于培养德智体美劳全面发展的高素质人才。学校拥有一支高水平的师资队伍，现有教职工X人，其中教授、副教授X人，博士生导师X人。</p>
+        <p>GZU坚持以人才培养为中心，以学科建设为龙头，以科学研究为支撑，以社会服务为纽带，全面推进教育教学改革，不断提高人才培养质量和科学研究水平。</p>
+    </section>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>联系我们</h3>
+                <ul>
+                    <li>地址：贵州省贵阳市花溪区花溪大道(南段)2708号</li>
+                    <li>邮编：550025</li>
+                    <li>电话：0851-88292178</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="#">学校简介</a></li>
+                    <li><a href="#">组织机构</a></li>
+                    <li><a href="#">师资队伍</a></li>
+                    <li><a href="#">科研平台</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>招生就业</h3>
+                <ul>
+                    <li><a href="#">本科生招生</a></li>
+                    <li><a href="#">研究生招生</a></li>
+                    <li><a href="#">国际学生招生</a></li>
+                    <li><a href="#">就业服务</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>校园服务</h3>
+                <ul>
+                    <li><a href="#">图书馆</a></li>
+                    <li><a href="#">信息门户</a></li>
+                    <li><a href="#">教务系统</a></li>
+                    <li><a href="#">校历</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2023 GZU. 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>

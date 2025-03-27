@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集 | 项目</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General styling improvements */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Enhanced header and navigation */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 10%;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo a {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4e73df;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .logo a:hover {
+            color: #2e59d9;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-links li a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 10px 0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links li a:hover, 
+        .nav-links li a.active {
+            color: #4e73df;
+        }
+        
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #4e73df;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links li a:hover::after,
+        .nav-links li a.active::after {
+            width: 100%;
+        }
+
+        /* Works sections styling */
+        .works-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 60px 0;
+        }
+        
+        .work-item {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        
+        .work-item:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .work-image {
+            height: 220px;
+            background-color: #e9ecef;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease;
+        }
+        
+        .work-item:hover .work-image {
+            transform: scale(1.05);
+        }
+        
+        .work-content {
+            padding: 25px;
+        }
+        
+        .work-title {
+            margin-top: 5px;
+            font-size: 1.6rem;
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .work-category {
+            display: inline-block;
+            background-color: #4e73df;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+            box-shadow: 0 3px 8px rgba(78, 115, 223, 0.3);
+        }
+        
+        .work-description {
+            color: #5a6878;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .work-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4e73df;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .work-link:hover {
+            background-color: #2e59d9;
+            box-shadow: 0 6px 15px rgba(46, 89, 217, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        section {
+            padding: 100px 10%;
+            background-color: #f9f9f9;
+        }
+        
+        section:nth-child(even) {
+            background-color: #ffffff;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            font-size: 2.2rem;
+            color: #2d3748;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: #4e73df;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+        /* Footer styling */
+        footer {
+            background-color: #2d3748;
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #4e73df;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">个人作品</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="blog.html">主页</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="works">
+            <h2 class="section-title">我的项目</h2>
+            
+            <div class="works-container">
+                <!-- MIT Project -->
+                <div class="work-item">
+                    <div class="work-image" style="background-image: url('pictures/MIT6.824.png');"></div>
+                    <div class="work-content">
+                        <span class="work-category">MIT 6.824</span>
+                        <h3 class="work-title">分布式系统</h3>
+                        <p class="work-description">使用Raft共识算法实现了一个容错的键值存储系统。该系统可以承受网络分区和节点故障。</p>
+                        <a href="#" class="work-link">查看项目</a>
+                    </div>
+                </div>
+                
+                <!-- Stanford Project -->
+                <div class="work-item">
+                    <div class="work-image" style="background-image: url('pictures/cs224N.jpg');"></div>
+                    <div class="work-content">
+                        <span class="work-category">Stanford CS224N</span>
+                        <h3 class="work-title">深度学习自然语言处理</h3>
+                        <p class="work-description">构建了一个具有注意力机制的神经机器翻译系统，在WMT'14英德数据集上实现了34.2的BLEU评分。</p>
+                        <a href="#" class="work-link">查看项目</a>
+                    </div>
+                </div>
+                
+                <!-- Berkeley Project -->
+                <div class="work-item">
+                    <div class="work-image" style="background-image: url('pictures/cs162.jng');"></div>
+                    <div class="work-content">
+                        <span class="work-category">Berkeley CS162</span>
+                        <h3 class="work-title">操作系统</h3>
+                        <p class="work-description">为教育用Pintos操作系统开发了自定义线程调度器和虚拟内存系统，提高了27%的性能。</p>
+                        <a href="#" class="work-link">查看项目</a>
+                    </div>
+                </div>
+                
+                <!-- CMU Project -->
+                <div class="work-item">
+                    <div class="work-image" style="background-image: url('pictures/15445.jpg');"></div>
+                    <div class="work-content">
+                        <span class="work-category">CMU 15-445</span>
+                        <h3 class="work-title">数据库系统</h3>
+                        <p class="work-description">为关系数据库管理系统实现了B+树索引、缓冲池管理器和查询执行引擎。</p>
+                        <a href="#" class="work-link">查看项目</a>
+                    </div>
+                </div>
+                
+                <!-- Personal Project 1 -->
+                <div class="work-item">
+                    <div class="work-image" style="background-image: url('pictures/as-web-SmartTask.webp');"></div>
+                    <div class="work-content">
+                        <span class="work-category">网页应用</span>
+                        <h3 class="work-title">智能任务管理器</h3>
+                        <p class="work-description">一个基于React的任务管理应用，具有机器学习驱动的优先级建议和调度功能。使用Firebase作为后端服务。</p>
+                        <a href="#" class="work-link">查看项目</a>
+                    </div>
+                </div>
+                
+                <!-- Personal Project 2 -->
+                <div class="work-item">
+                    <div class="work-image" style="background-image: url('pictures/FitTrack.webp');"></div>
+                    <div class="work-content">
+                        <span class="work-category">移动应用</span>
+                        <h3 class="work-title">健身追踪专业版</h3>
+                        <p class="work-description">一个健身追踪Flutter应用，具有个性化锻炼计划、营养追踪和社交功能。可在iOS和Android上使用。</p>
+                        <a href="#" class="work-link">查看项目</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="academic">
+            <h2 class="section-title">学术项目</h2>
+            
+            <div class="works-container">
+                <!-- Academic Project 1 -->
+                <div class="work-item">
+                    <div class="work-image" style="background-image: url('pictures/Quantum.jpg');"></div>
+                    <div class="work-content">
+                        <span class="work-category">研究</span>
+                        <h3 class="work-title">量子计算算法</h3>
+                        <p class="work-description">使用IBM的Qiskit框架研究并实现了用于优化问题的量子计算算法。</p>
+                        <a href="#" class="work-link">查看论文</a>
+                    </div>
+                </div>
+                
+                <!-- Academic Project 2 -->
+                <div class="work-item">
+                    <div class="work-image" style="background-image: url('pictures/Deep.jpg');"></div>
+                    <div class="work-content">
+                        <span class="work-category">论文</span>
+                        <h3 class="work-title">深度强化学习</h3>
+                        <p class="work-description">开发了用于机器人操作任务的新型深度强化学习技术，取得了最先进的结果。</p>
+                        <a href="#" class="work-link">查看研究</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 我的作品集。保留所有权利。</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

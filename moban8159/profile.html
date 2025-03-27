@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="我的个人简介">
+    <meta name="keywords" content="个人, 简介, 作品集, 学生, 编程, 科技">
+    <meta name="author" content="陈国豪">
+    <!-- PAGE TITLE -->
+    <title>陈国豪 - 个人简介</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- ALL GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="static/css/css2.css" rel="stylesheet">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="static/css/font-awesome-pro.css">
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="static/css/remixicon.css">
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <!-- NICE SELECT CSS -->
+    <link rel="stylesheet" href="static/css/nice-select.min.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="static/css/animate.min.css">
+    <!-- MOBILE MENU CSS -->
+    <link rel="stylesheet" href="static/css/mobilemenu.css">
+    <!-- SPACING CSS -->
+    <link rel="stylesheet" href="static/css/spacing.css">
+    <link rel="stylesheet" href="static/css/blog.css">
+    <!-- MAIN STYLE CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <!-- CUSTOM STYLES FOR PROFILE IMAGE -->
+    <style>
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .sidebar__author-thumb img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="#"></script>
+      <script src="#"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- START PRELOADER AREA-->
+    <div class="preloader">
+        <svg viewbox="0 0 1000 1000" preserveaspectratio="none">
+            <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+        <div class="preloader-heading">
+            <div class="load-text">
+                <span>加</span>
+                <span>载</span>
+                <span>中</span>
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
+            </div>
+        </div>
+    </div>
+    <!-- END PRELOADER AREA -->
+    <!-- START SCROOL UP DESIGN AREA -->
+    <div class="progress-wrap cursor-pointer">
+        <i class="ri-arrow-up-s-line"></i>
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- / END SCROOL UP DESIGN AREA -->
+    <!-- START MAGIC CURSOR AND BALL AREA-->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- / END MAGIC CURSOR AND BALL AREA-->
+    <!-- START MENU DESIGN AREA-->
+    <header class="main-header">
+        <div class="header-upper">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
+                            <div class="logo-area">
+                                <!-- Logo removed as requested -->
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-6 col-6 col-sm-9">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul class="onepage">
+                                        <li><a href="blog.html" class="linkstyle">首页</a></li>
+                                        <li><a href="profile.html" class="linkstyle active">个人简介</a></li>
+                                        <li><a href="school.html" class="linkstyle">学校概况</a></li>
+                                        <li><a href="works.html" class="linkstyle">个人作品</a></li>
+                                        <li><a href="interest.html" class="linkstyle">我的兴趣</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="side-menu-icon d-lg-none text-end">
+                                <a href="javascript:void(0)" class="info-toggle-btn f-right sidebar-toggle-btn"><i class="fal fa-bars"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- // END MENU DESIGN AREA-->
+    <!-- START MOBILE MENU DESIGN AREA-->
+    <div class="sidebar__area">
+        <div class="sidebar__wrapper">
+            <div class="sidebar__close">
+                <button class="sidebar__close-btn" id="sidebar__close-btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="sidebar__content mt-50 mb-20">
+                <div class="mobile-menu fix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay"></div>
+    <!-- // END MOBILE MENU DESIGN AREA-->
+    <!-- START SINGLE PAGE DESIGN AREA -->
+    <section class="single-page-hero-area">
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-lg-12">
+                    <h2>个人简介</h2>
+                    <div class="breadcrumb__list">
+                        <span><a href="blog.html">首页</a></span>
+                        <span class="dvdr"><i class="fa-regular fa-angle-right"></i></span>
+                        <span>个人简介</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // END SINGLE PAGE DESIGN AREA -->
+    <!-- profile content area start -->
+    <section class="profile-page-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 col-lg-8">
+                    <div class="profile__wrapper">
+                        <div class="profile-header mb-50">
+                            <div class="profile-image">
+                                <img src="pictures/person.jpg" alt="个人头像">
+                            </div>
+                            <div class="profile-title">
+                                <h2>陈国豪</h2>
+                                <p>计算机科学学生 | 开发者 | 科技爱好者</p>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-section mb-50">
+                            <h3>关于我</h3>
+                            <p>你好！我是陈国豪，一名热爱计算机科学的学生，对软件开发、人工智能和新技术有浓厚的兴趣。我喜欢解决复杂问题，并构建能产生积极影响的应用程序。</p>
+                            <p>在我的学术旅程中，我专注于发展扎实的技术技能，同时探索解决编程挑战的创新方法。我相信技术有改变和改善我们日常生活的力量。</p>
+                        </div>
+                        
+                        <div class="profile-section mb-50">
+                            <h3>教育背景</h3>
+                            <div class="education-item">
+                                <h4>计算机科学学士学位</h4>
+                                <p class="institution">大学名称</p>
+                                <p class="period">2020 - 至今</p>
+                                <p class="description">目前正在攻读学位，重点关注软件开发和人工智能。保持优异的学术记录，尤其在编程课程方面表现突出。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-section mb-50">
+                            <h3>技术技能</h3>
+                            <div class="skills-container">
+                                <div class="skill-category">
+                                    <h4>编程语言</h4>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Java</li>
+                                        <li>C++</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML/CSS</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>技术与框架</h4>
+                                    <ul>
+                                        <li>React</li>
+                                        <li>Node.js</li>
+                                        <li>Django</li>
+                                        <li>TensorFlow</li>
+                                        <li>Git</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>个人成就</h3>
+                            <ul class="achievements-list">
+                                <li>2023年大学黑客马拉松获胜者</li>
+                                <li>2021-2022年学术优秀学生名单</li>
+                                <li>在[期刊/会议]上发表关于[主题]的研究论文</li>
+                                <li>在各种编程领域完成10多项专业认证</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-lg-4">
+                    <div class="blog_sidebar__wrapper pl-40">
+                        <div class="sidebar__widget mb-45">
+                            <div class="sidebar__widget-content">
+                                <div class="sidebar__author">
+                                    <div class="sidebar__author-thumb">
+                                        <img src="pictures/person.jpg" alt="陈国豪">
+                                    </div>
+                                    <div class="sidebar__author-content">
+                                        <h3 class="sidebar__author-title">陈国豪</h3>
+                                        <p>计算机科学学生 | 开发者 | 科技爱好者</p>
+                                        <div class="sidebar__author-social d-flex align-items-center justify-content-center">
+                                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar__widget mb-45">
+                            <h3 class="sidebar__widget-title">联系信息</h3>
+                            <div class="sidebar__widget-content">
+                                <ul class="contact-info">
+                                    <li><i class="fa-light fa-envelope"></i> ghchen2005@gmail.com</li>
+                                    <li><i class="fa-light fa-phone"></i> 18984489391</li>
+                                    <li><i class="fa-light fa-location-dot"></i> 中国贵州</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar__widget mb-40">
+                            <h3 class="sidebar__widget-title">兴趣领域</h3>
+                            <div class="sidebar__widget-content">
+                                <div class="tagcloud">
+                                    <a href="#">机器学习</a>
+                                    <a href="#">网页开发</a>
+                                    <a href="#">移动应用</a>
+                                    <a href="#">数据科学</a>
+                                    <a href="#">网络安全</a>
+                                    <a href="#">游戏开发</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- profile content area end -->
+    <!-- START FOOTER DESIGN AREA -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-top">
+                        <p>想要联系我？</p>
+                        <h2><a href="mailto:ghchen2005@gmail.com">ghchen2005@gmail.com</a></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <p class="copy-left-text">&copy; 陈国豪 - 个人简介 2025 3月</p>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <p class="copy-right-text">版权所有</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / END FOOTER DESIGN AREA -->
+    <!-- JQUERY JS -->
+    <script src="static/js/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP JS-->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- APPEAR JS -->
+    <script src="static/js/appear.min.js"></script>
+    <!-- MAGNIFICANT JS -->
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <!-- MOBILE MENU JS-->
+    <script src="static/js/mobilemenu.js"></script>
+    <!-- GSAP AND LOCOMOTIV JS-->
+    <script src="static/js/gsap.min.js"></script>
+    <script src="static/js/ScrollTrigger.min.js"></script>
+    <script src="static/js/lenis.js"></script>
+    <!-- SWIPPER JS-->
+    <script src="static/js/swiper-bundle.js"></script>
+    <!-- NICE SELECT JS-->
+    <script src="static/js/jquery.nice-select.min.js"></script>
+    <!-- IMAGE LOADER JS-->
+    <script src="static/js/imagesloaded.pkgd.min.js"></script>
+    <!-- ISOTOPE JS-->
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    <!--  WOW ANIMATION JS-->
+    <script src="static/js/wow.min.js"></script>
+    <!-- SCRIPT JS-->
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>

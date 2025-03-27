@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的兴趣爱好</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .interest-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .interest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .interest-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            background-color: #e0e0e0;
+        }
+        
+        .interest-content {
+            padding: 20px;
+        }
+        
+        .interest-content h2 {
+            margin-top: 0;
+            color: #2575fc;
+            font-size: 1.5em;
+        }
+        
+        .interest-content p {
+            line-height: 1.6;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>我的兴趣爱好</h1>
+            <p class="subtitle">生活因兴趣而精彩</p>
+            <a href="blog.html" style="display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease;">返回首页</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="interest-grid">
+            <!-- 兴趣1: 电子游戏 -->
+            <div class="interest-card">
+                <img src="pictures/game.jpg" alt="电子游戏" class="interest-image">
+                <div class="interest-content">
+                    <h2>电子游戏</h2>
+                    <p>我热爱各类电子游戏，尤其是开放世界和角色扮演类游戏。通过游戏，我能探索无限可能的虚拟世界，体验不同的人生，并结交志同道合的朋友。最喜欢的游戏系列包括《塞尔达传说》、《上古卷轴》和《巫师》系列。</p>
+                </div>
+            </div>
+            
+            <!-- 兴趣2: 阅读 -->
+            <div class="interest-card">
+                <img src="pictures/book.jpg" alt="阅读" class="interest-image">
+                <div class="interest-content">
+                    <h2>阅读</h2>
+                    <p>阅读是我获取知识和放松心情的重要方式。我喜欢科幻、奇幻、哲学和心理学类书籍，它们能开拓我的视野，启发我的思考。每晚睡前阅读半小时已成为我雷打不动的习惯。</p>
+                </div>
+            </div>
+            
+            <!-- 兴趣3: 户外徒步 -->
+            <div class="interest-card">
+                <img src="pictures/walk.jpg" alt="户外徒步" class="interest-image">
+                <div class="interest-content">
+                    <h2>户外徒步</h2>
+                    <p>户外徒步让我能亲近自然，远离城市的喧嚣。在山林间漫步，呼吸新鲜空气，欣赏壮丽风景，是我放松身心的绝佳方式。我已经走过多条国内知名徒步路线，期待未来挑战更多高难度路线。</p>
+                </div>
+            </div>
+            
+            <!-- 兴趣4: 编程 -->
+            <div class="interest-card">
+                <img src="pictures/code.jpg" alt="编程" class="interest-image">
+                <div class="interest-content">
+                    <h2>编程</h2>
+                    <p>编程不仅是我的工作技能，也是我的兴趣爱好。我喜欢通过代码创造各种有趣的项目，解决生活中的小问题。在编程的世界里，逻辑思维和创造力得到了完美结合，带给我无穷的成就感。</p>
+                </div>
+            </div>
+            
+            <!-- 兴趣5: 烹饪 -->
+            <div class="interest-card">
+                <img src="pictures/cook.jpg" alt="烹饪" class="interest-image">
+                <div class="interest-content">
+                    <h2>烹饪</h2>
+                    <p>烹饪是我表达创意的另一种方式。我喜欢尝试不同国家的菜系，研究食材的搭配和烹饪技巧。每当朋友品尝我做的美食并给予赞赏时，那种满足感是无与伦比的。我的拿手好菜包括意大利面、中式炒菜和各种甜点。</p>
+                </div>
+            </div>
+            
+            <!-- 兴趣6: 音乐欣赏 -->
+            <div class="interest-card">
+                <img src="pictures/music.jpg" alt="音乐欣赏" class="interest-image">
+                <div class="interest-content">
+                    <h2>音乐欣赏</h2>
+                    <p>音乐是我生活中不可或缺的部分。无论是工作、学习还是放松，适合的音乐总能让我进入最佳状态。我的音乐品味广泛，从古典音乐到摇滚、爵士、电子乐都有涉猎。我还在学习弹吉他，希望未来能自弹自唱。</p>
+                </div>
+            </div>
+            
+            <!-- 兴趣7: 摄影 -->
+            <div class="interest-card">
+                <img src="pictures/photos.jpg" alt="摄影" class="interest-image">
+                <div class="interest-content">
+                    <h2>摄影</h2>
+                    <p>摄影让我能够捕捉生活中的美好瞬间。我尤其喜欢风景摄影和街拍，通过镜头记录世界的多彩和人生的精彩。学习构图、光线运用等摄影技巧也是一个不断提升自我的过程。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 我的个人网站 | 兴趣爱好页面</p>
+        <a href="blog.html" style="display: inline-block; margin-top: 10px; padding: 8px 20px; background-color: #2575fc; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s ease;">返回首页</a>
+    </footer>
+</body>
+</html>
